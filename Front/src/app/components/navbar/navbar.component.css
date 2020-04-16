@@ -1,0 +1,23 @@
+.navs {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.blues {
+    background: rgba(37, 133, 167);
+}
+
+.navbar {
+    background: rgba(255, 255, 255);
+    z-index: 1;
+}
+
+.navbar-brand {
+    width: 150px;
+    background: url(../../../assets/ico/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999999px;
+    align-content: stretch;
+}

@@ -1,0 +1,108 @@
+<div class="top-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col section-description wow fadeIn">
+                <h1>VR</h1>
+            </div>
+        </div>
+        <div class='col-12'>
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let item of [].constructor(numberRow); let i=index">
+                    <div class="card-deck">
+                        <ng-container *ngFor="let image of images; let indice=index">
+                            <div class="card" *ngIf="indice > (4*i)-1 && indice < 4*(i + 1)">
+                                <img class="card-img-top" [src]="image" (error)="no_image($event.target, indice)">
+                                <div class="card-body" id="{{ 'wave' + indice }}" *ngIf="indice<initialValue">
+                                    <ng-container *ngIf="process[indice]">
+                                        <!--ng-container *ngFor="let item of [].constructor(VR[indice].quantity); let j=index">
+                                            <p>{{VR[indice].info[j].C}}</p>
+                                            <div class="progress" style="height: 5px;">
+                                                <div class="progress-bar" role="progressbar" [style.width.%]="VR[indice].info[j].P" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </ng-container-->
+                                        <div class="headline">
+                                            <h3>Daño: </h3>
+                                            <p>{{ VR[indice].damage }}</p>
+                                        </div>
+
+                                        <div class="headline">
+                                            <h3>Marca: </h3>
+                                            <p>{{ VR[indice].brand }}</p>
+                                        </div>
+                                    </ng-container>
+                                    <ng-container *ngIf="!process[indice]">
+                                        <div class="card-body loading">
+                                            <h4>Cargando...</h4>
+                                            <div class="fa-3x">
+                                                <i class="fas fa-spinner fa-spin"></i>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class="row logo-row">
+            <div class="col">
+                <!--div class="card my-card" style="width: 10rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Resutado VR</h5>
+                        <p class="card-text">Tipo de choque... Marca...</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" (click)="fileChange($event)">Enviar</a>
+                </div-->
+                <div class="container">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="dropzone" appDnd (fileDropped)="onFileDropped($event)">
+                            <input type="file" #fileDropRef id="fileDropRef" multiple (change)="fileBrowseHandler($event.target.files)" style="display: none;" />
+
+                            <h3>Arrastra o selecciona tus imagenes aquí</h3>
+                            <label for="fileDropRef">
+                                <div class="upload-img"></div>
+                            </label>
+                            <h4>Mínimo 2</h4>
+
+                        </div>
+                        <!--div class="col-md-6 offset-md-3">
+                            <h3>Escoja sus imagenes</h3>
+                            <div class="form-group">
+                                <input type="file" name="image" id="selectedFile" (change)="fileAdded($event)" multiple style="display: none;" />
+                                <input type="button" value="Buscar" onclick="document.getElementById('selectedFile').click();" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" (click)="upload()">Enviar</button>
+                            </div>
+
+                            <div ng2FileDrop (onFileDrop)="fileAdded($event)" [ngClass]="{'over-drop-zone': hasBaseDropZoneOver}">
+                                Drag and drop files to upload
+                            </div>                            
+                        </div-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="brand-tiger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Cantidad de imágenes</h5>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Porfavor seleccione al menos una imágen más.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning" (click)="modal.close('Save click')"><i class="far fa-check-circle"></i>  Entendido</button>
+    </div>
+</ng-template>

@@ -1,0 +1,46 @@
+<div class="section-1-container section-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col section-1 section-description wow fadeIn">
+                <h1>NLU</h1>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group form-group-lg">
+                    <label>Descripción accidente:</label>
+                    <textarea class="form-control" id="descripcion" placeholder="Escriba porfavor la descripción de su accidente" rows="10" cols="90"></textarea>
+                </div>
+                <button type="button" class="btn btn-lg btn-primary" (click)="sendText()">Enviar</button>
+            </div>
+            <div class="col-sm-6">
+                <ngb-carousel *ngIf="ok">
+                    <ng-template ngbSlide *ngFor="let item of [].constructor(nRow); let i=index">
+                        <div class="card">
+                            <div class="card-body">
+                                <ng-container *ngFor="let key of dataKeys; let j=index">
+                                    <ng-container *ngIf="j > (4*i)-1 && j < 4*(i + 1)">
+                                        <div class="form-group">
+                                            <label>{{ dataKeys[j] }}</label>
+                                            <input type="text" class="form-control" [value]="dataValues[j]">
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+
+                <div class="card border-0" *ngIf="!ok && start">
+                    <div class="card-body loading">
+                        <h4>Cargando...</h4>
+                        <div class="fa-3x">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
