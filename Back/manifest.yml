@@ -1,0 +1,3 @@
+applications:
+  - name: sura-watson
+    memory: 256M

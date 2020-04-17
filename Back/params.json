@@ -1,0 +1,10 @@
+{
+  "vr_version": "<Version del Visual Recognition, fecha>",
+  "vr_api_key": "<api key generada por el servicio IBM Watson>",
+  "vr_model_id": "<id del modelo entrenado>",
+  "vr_url": "<URL del servicio>",
+  "nl_version": "<Version de NLU, fecha>",
+  "nl_api_key": "<api key del NLU generada por IBM Watson>",
+  "nl_url": "<URL del servicio NLU>",
+  "nl_model_id": "<ID del modelo NLU>"
+}
