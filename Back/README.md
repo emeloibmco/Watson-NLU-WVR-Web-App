@@ -17,7 +17,5 @@
     <img src="https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/watsonVR4.png" height="130">
     </p>
 
-4. Instalar paquetes npm
-   : `npm install`
-5. Ejecutar prueba local
-   : `npm start`
+4. Instalar paquetes npm `npm install`
+5. Ejecutar prueba local `npm start`
