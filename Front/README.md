@@ -10,7 +10,7 @@ Este apartado tratará acerca del FrontEnd desarrollado en Angular 9 y los servi
 1. [Introducción](#Introducción)
 2. [Arquitectura](#Arquitectura)
 3. [Funcionamiento](#Funcionamiento)
-⋅⋅1. [NLU](#NLU)
+  -[NLU](#NLU)
 ⋅⋅2. [VR](#VR)
 4. [Conexión](#Conexión)
 5. [Servicios](#Servicios)
