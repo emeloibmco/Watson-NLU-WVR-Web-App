@@ -1,13 +1,14 @@
 # <div align=center> API Backend que utiliza llamadas al API de Watson Visual Recognition y Natural Language Understanding </div>
 
-## <div align=center>📑 Tabla de contenido </div>
+## 📑 Tabla de contenido
 
 1. [TL;DR](#tldr)
 2. [Arquitectura](#-arquitectura)
 3. [¿Cómo funciona?](#-cómo-funciona)
 4. [Manejando el JSON del API IBM Watson](#-manejando-el-JSON-del-API-IBM-Watson)
+5. [Referencias y documentación útil](#referencias-y-documentación-util)
 
-## <div align=center>TL;DR</div>
+## TL;DR
 
 1. **Clonar el repositorio y ubicarnos en la carpeta Back**
 
@@ -32,11 +33,11 @@
 
    ![probarVR](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/probarVR.png)
 
-## <div align=center>🏯 Arquitectura</div>
+## 🏯 Arquitectura
 
 ![arquitectura](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/arquitectura1.png)
 
-## <div align=center>💡 ¿Cómo funciona?</div>
+## 💡 ¿Cómo funciona?
 
 Las rutas del API Backend se encuentran en el archivo server.js.
 
@@ -62,7 +63,7 @@ En cada ruta se ejecuta el respectivo módulo, excepto en el análisis de imagen
 
 ![NLU](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/callNLU.png)
 
-## <div align=center>🧾 Manejando el JSON del API IBM Watson</div>
+## 🧾 Manejando el JSON del API IBM Watson
 
 Cada llamada al API IBM Watson redirecciona los resultados al modulo de procesamiento de datos, proData, ubicados en la carpeta de utilidades utils.
 
@@ -140,6 +141,15 @@ _Se eliminaron unos registros para una fácil visualización en este archivo_
   }, ...
 ];
 ```
+
+## Referencias y documentación útil
+
+- [Natural Language Understanding API docs](https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding?code=node#introduction)
+- [Visual Recognition V3 API docs](https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v3)
+- [Visual Recognition V4 API docs](https://cloud.ibm.com/apidocs/visual-recognition-v4)
+- [Express Framework - NPM package](https://www.npmjs.com/package/express)
+- [Express Framework - Official documentation](http://expressjs.com/en/4x/api.html)
+- [JSON MDN Docs](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON)
 
 ## Autores y contribuidores 🙋‍♀️🙋‍♂️
 
