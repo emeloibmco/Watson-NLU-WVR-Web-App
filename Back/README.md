@@ -3,9 +3,9 @@
 ## <div align=center>📑 Tabla de contenido </div>
 
 1. [TL;DR](#tldr)
-2. [Arquitectura](#arquitectura)
-3. [¿Cómo funciona?](#cómo-funciona-)
-4. [Manejando el JSON del API IBM Watson](#manejando-el-JSON-del-API-IBM-Watson)
+2. [Arquitectura](#-arquitectura)
+3. [¿Cómo funciona?](#-cómo-funciona)
+4. [Manejando el JSON del API IBM Watson](#-manejando-el-JSON-del-API-IBM-Watson)
 
 ## <div align=center>TL;DR</div>
 
@@ -32,11 +32,11 @@
 
    ![probarVR](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/probarVR.png)
 
-## 🏯 Arquitectura
+## <div align=center>🏯 Arquitectura</div>
 
 ![arquitectura](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/arquitectura.png)
 
-## 💡 ¿Cómo funciona?
+## <div align=center>💡 ¿Cómo funciona?</div>
 
 Las rutas del API Backend se encuentran en el archivo server.js.
 
@@ -62,7 +62,7 @@ En cada ruta se ejecuta el respectivo módulo, excepto en el análisis de imagen
 
 ![NLU](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/callNLU.png)
 
-## 🧾 Manejando el JSON del API IBM Watson
+## <div align=center>🧾 Manejando el JSON del API IBM Watson</div>
 
 Cada llamada al API IBM Watson redirecciona los resultados al modulo de procesamiento de datos, proData, ubicados en la carpeta de utilidades utils.
 
