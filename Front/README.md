@@ -7,7 +7,19 @@ Una aplicación desarrollada a partir de una arquitectura de microservicios, hac
 Este apartado tratará acerca del FrontEnd desarrollado en Angular 9 y los servicios de IBM Cloud usados, para un acercamiento al BackEnd, se puede observar en el [readme](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md) del BackEnd.
 
 ## Indice
-[TOCM]
+1. [Introducción](#Introducción)
+2. [Arquitectura](#Arquitectura)
+3. [Funcionamiento](#Funcionamiento)
+  1. [NLU](#NLU)
+  2. [VR](#VR)
+4. [Conexión](#Conexión)
+5. [Servicios](#Servicios)
+  1. [Natural Language Understanding Service](#Natural Language Understanding Service)
+  2. [Watson Knowledge Studio Service](#Watson Knowledge Studio Service)
+  3. [Watson Visual Recognition Service](#Watson Visual Recognition Service)
+6. [Aplicacion](#Aplicacion)
+7. [Referencias](#Referencias)
+8. [Autores](#Autores)
 
 ## Arquitectura
 La arquitectura de la aplicación se puede apreciar a continuación
