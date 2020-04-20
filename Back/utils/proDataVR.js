@@ -24,10 +24,6 @@ function processData(ansJson) {
             scrAnt = score;
             rspJson[vlr] = score;
           }
-          // if (score < 19) {
-          //   delete rspJson[vlr];
-          //   rspJson.daño = "ninguno";
-          // }
         }
         for (const key in rspJson) {
           if (rspJson[key] < 19) {
