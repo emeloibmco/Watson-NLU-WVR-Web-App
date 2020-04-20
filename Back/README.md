@@ -140,3 +140,9 @@ _Se eliminaron unos registros para una fácil visualización en este archivo_
   }, ...
 ];
 ```
+
+## Autores y contribuidores
+
+![IBM Cloud](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/ibm_cloud.png) _Equipo IBM Cloud Tech sales Colombia._
+
+[Contribuidores](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/graphs/contributors)
