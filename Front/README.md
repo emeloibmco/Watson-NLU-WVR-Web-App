@@ -10,13 +10,13 @@ Este apartado tratará acerca del FrontEnd desarrollado en Angular 9 y los servi
 1. [Introducción](#Introducción)
 2. [Arquitectura](#Arquitectura)
 3. [Funcionamiento](#Funcionamiento)
-  1. [NLU](#NLU)
-  2. [VR](#VR)
+      -[NLU](#NLU)
+      -[VR](#VR)
 4. [Conexión](#Conexión)
 5. [Servicios](#Servicios)
-  1. [Natural Language Understanding Service](#Natural-Language-Understanding-Service)
-  2. [Watson Knowledge Studio Service](#Watson-Knowledge-Studio-Service)
-  3. [Watson Visual Recognition Service](#Watson-Visual-Recognition-Service)
+      -[Natural Language Understanding Service](#Natural-Language-Understanding-Service)
+      -[Watson Knowledge Studio Service](#Watson-Knowledge-Studio-Service)
+      -[Watson Visual Recognition Service](#Watson-Visual-Recognition-Service)
 6. [Aplicacion](#Aplicacion)
 7. [Referencias](#Referencias)
 8. [Autores](#Autores)
@@ -27,7 +27,7 @@ La arquitectura de la aplicación se puede apreciar a continuación
 ![](https://user-images.githubusercontent.com/25871322/79778536-7ab1d400-82fe-11ea-8e09-5c471265d5c3.png)
 
 ## Funcionamiento
-Al realizar el front en Angular, es necesario entender que la aplicación estará conformada por componentes, para este caso se realizan 4 componentes, de los cuales 2 tendrán la lógica de funcionamiento y conexión con el back, [NLU](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md "NLU") y [VR](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md "VR").
+Al realizar el front en Angular, es necesario entender que la aplicación estará conformada por componentes, para este caso se realizan 4 componentes, de los cuales 2 tendrán la lógica de funcionamiento y conexión con el back, [NLU](#NLU) y [VR](#VR).
 
 ### NLU
 Este componente contiene los elementos visuales necesarios para que el usuario interactue con el servicio de Natural Language Understanding, como un cuadro de texto y un conjunto de cards por medio del cual se muestra los resultados recibidos desde el servicio.
@@ -38,7 +38,7 @@ A traves del servicio de NLU, el usuario puede ingresar un texto que describa el
 
 ![](https://user-images.githubusercontent.com/25871322/79779774-856d6880-8300-11ea-8037-e953c4928c58.png)
 
-La configuración del Natural Language Understanding y el Watson Knowledge Studio se encuentra en [Natural Language Undestanding Service](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md "Natural Language Undestanding Service") y [Watson Knowledge Studio Service](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md "Watson Knowledge Studio Service") respectivamente.
+La configuración del Natural Language Understanding y el Watson Knowledge Studio se encuentra en [Natural Language Undestanding Service](#Natural-Language-Undestanding-Service) y [Watson Knowledge Studio Service](#Watson-Knowledge-Studio-Service) respectivamente.
 
 ### VR
 Al igual que el componente de NLU, este contiene los elementos visuales necesarios para que el usuario interactue con el servicio de Visual Recognition como un cuadro de drag'n drop y un conjunto de cards por medio del cual se muestra los resultados recibidos desde el servicio.
@@ -49,7 +49,7 @@ A traves del servicio de VR, el usuario puede ingresar varias imágenes del acci
 
 ![](https://user-images.githubusercontent.com/25871322/79780863-345e7400-8302-11ea-951b-14708a12c903.png)
 
-La configuración del Watson Visual Recognition se encuentra en [Watson Visual Recognition Service](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md "Watson Visual Recognition Service").
+La configuración del Watson Visual Recognition se encuentra en [Watson Visual Recognition Service](#Watson-Visual-Recognition-Service).
 
 ## Conexión
 Al interior de los anteriores componente se realiza una comunicación con el back a partir de un llamado POST a la URL en la cual se encuentre desplegado el back, esto se puede determinar en el archivo [nlu.component.ts](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/blob/master/Front/src/app/components/nlu/nlu.component.ts) para el caso de NLU o en [vr.component.ts](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/blob/master/Front/src/app/components/vr/vr.component.ts) para el caso del VR.
