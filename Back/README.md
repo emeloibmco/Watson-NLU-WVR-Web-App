@@ -34,7 +34,7 @@
 
 ## <div align=center>🏯 Arquitectura</div>
 
-![arquitectura](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/arquitectura.png)
+![arquitectura](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/arquitectura1.png)
 
 ## <div align=center>💡 ¿Cómo funciona?</div>
 
@@ -141,7 +141,7 @@ _Se eliminaron unos registros para una fácil visualización en este archivo_
 ];
 ```
 
-## Autores y contribuidores
+## Autores y contribuidores 🙋‍♀️🙋‍♂️
 
 ![IBM Cloud](https://raw.githubusercontent.com/emeloibmco/Watson-NLU-WVR-Web-App/master/Back/.github/ibm_cloud.png) _Equipo IBM Cloud Tech sales Colombia._
 
