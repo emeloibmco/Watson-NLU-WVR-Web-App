@@ -1,3 +1,3 @@
 applications:
-  - name: sura-watson
+  - name: watson-vr-nlu-app
     memory: 256M
