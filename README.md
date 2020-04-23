@@ -37,7 +37,7 @@ A traves del servicio de VR, el usuario puede ingresar varias imágenes del acci
 ## Desarrollo
 Para ver el apartado del FrontEnd desarrollado en Angular 9 y los servicios de IBM Cloud usados, se puede dirigir al [readme](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Front/README.md) del FrontEnd. 
 
-Para verl el apartado del BackEnd desarrollado en Node.Js, se puede observar en el [readme](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md) del BackEnd.
+Para ver el apartado del BackEnd desarrollado en Node.Js, se puede observar en el [readme](https://github.com/emeloibmco/Watson-NLU-WVR-Web-App/tree/master/Back/README.md) del BackEnd.
 
 ## Aplicación
 La aplicación se encuentra actualmente desplegada desde IBM Cloud Foundry y se puede acceder a ella a través del siguiente enlace:
