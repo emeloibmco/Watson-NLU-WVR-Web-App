@@ -20,7 +20,7 @@ export class VrComponent implements OnInit {
   numberRow = 0;
   message: any;
   images: any;
-  URL = "https://sura-watson.mybluemix.net/upload-photos";
+  URL = "dirección del BackEnd" //"watson-vr-nlu-app.mybluemix.net/upload-photos";
   blank = `assets/img/blank.jpg`;
   VR: any;
   process: boolean[];
