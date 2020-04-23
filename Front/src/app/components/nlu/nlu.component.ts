@@ -12,7 +12,7 @@ export class NluComponent {
   dataValues: any = [];
   message: any;
   nRow: any;
-  URL = "https://sura-watson.mybluemix.net/upload-text";
+  URL = "dirección del BackEnd" // "https://watson-vr-nlu-app.mybluemix.net/upload-text";
   ok: boolean = false;
   start: boolean = false;
 
